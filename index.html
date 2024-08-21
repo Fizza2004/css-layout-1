@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2nd Navbar Explanation(Coding2GO)</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+  
+      <ul class="main-bar">
+        <li><a href="#">NAVBAR</a></li>
+        <li class="first-list hideOnMobile"><a href="#">HOME</a></li>
+        <li class="hideOnMobile"><a href="#">ABOUT</a></li>
+        <li class="hideOnMobile"><a href="#">SERVICES</a></li>
+        <li  class="last-list hideOnMobile"><a href="#">CONTACT</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="main-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                <img class="news-1-image" src="./assets/images/news-1-image.jpg" alt="thief-image" width="240px" height="240px">
+                <button class="black-button">
+                  <img width="20" height="20" src="https://img.icons8.com/material-rounded/24/FFFFFF/camera--v2.png" alt="camera--v2"/>
+                  <p>Photo <span style="font-weight: bold;">Stock.az</span></p>
+                  <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/FFFFFF/vertical-line.png" alt="vertical-line"/>
+                  <p>Tofiq Abdullayev</p>
+                </button>
+                <button class="green-button">
+                  <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/camcorder-pro.png" alt="camcorder-pro"/>
+                  <p>Video</p>
+                </button>
+              </div>
+              <div class="card-date">
+                <img width="13" height="13" src="https://img.icons8.com/material/24/737373/calendar--v1.png" alt="calendar--v1"/>
+                <p>19 AVQ, 2024 / 11:40</p>
+                <img width="13" height="13" src="https://img.icons8.com/material-rounded/24/737373/visible.png" alt="visible"/>
+                <p>499</p>
+              </div>
+              <div class="card-info">
+                <p>Naxçıvanda oğurluq edən şəxs saxlanıldı</p>
+              </div>
+              <div class="card-action">
+                <span class="category">KRİMİNAL</span>
+                <div class="likes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/forma-light/24/737373/facebook-like.png" alt="facebook-like"/>
+                  <p>84</p>
+                </div>
+                <div class="dislikes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/windows/32/737373/thumbs-down.png" alt="thumbs-down"/> 
+                  <p>8</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                <img class="news-1-image" src="./assets/images/news-2-image.jpg" alt="thief-image" width="240px" height="240px">
+              </div>
+              <div class="card-date">
+                <img width="13" height="13" src="https://img.icons8.com/material/24/737373/calendar--v1.png" alt="calendar--v1"/>
+                <p>19 AVQ, 2024 / 11:32</p>
+                <img width="13" height="13" src="https://img.icons8.com/material-rounded/24/737373/visible.png" alt="visible"/>
+                <p>324</p>
+              </div>
+              <div class="card-info">
+                <p>Belçikalı ulduz Kevin De Bruyne İngiltərə Premyer Liqasının ən yaxşı yarımmüdafiəçisi seçildi</p>
+              </div>
+              <div class="card-action">
+                <span class="category">IDMAN</span>
+                <div class="likes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/forma-light/24/737373/facebook-like.png" alt="facebook-like"/>
+                  <p>68</p>
+                </div>
+                <div class="dislikes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/windows/32/737373/thumbs-down.png" alt="thumbs-down"/> 
+                  <p>9</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                  <button class="left-pink-button"><img width="20" height="20" src="https://img.icons8.com/carbon-copy/100/FFFFFF/affinity-photo-1.png" alt="affinity-photo-1"/>FOTO</button>
+                  <button class="right-pink-button"><img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/open-book--v1.png" alt="open-book--v1"/>AÇIQLAMA</button>
+                
+                <img class="news-1-image" src="./assets/images/news-3-image.jpg" alt="thief-image" width="240px" height="240px">
+              </div>
+              <div class="card-date">
+                <img width="13" height="13" src="https://img.icons8.com/material/24/737373/calendar--v1.png" alt="calendar--v1"/>
+                <p>19 AVQ, 2024 / 11:24</p>
+                <img width="13" height="13" src="https://img.icons8.com/material-rounded/24/737373/visible.png" alt="visible"/>
+                <p>5694</p>
+              </div>
+              <div class="card-info">
+                <p>Paytaxt sakinlərinin SU SINAĞI:Kimdir günahkar?-RƏSMİ AÇIQLAMA</p>
+              </div>
+              <div class="card-action">
+                <span class="category">CƏMİYYƏT</span>
+                <div class="likes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/forma-light/24/737373/facebook-like.png" alt="facebook-like"/>
+                  <p>11</p>
+                </div>
+                <div class="dislikes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/windows/32/737373/thumbs-down.png" alt="thumbs-down"/> 
+                  <p>228</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                <img class="news-1-image" src="./assets/images/news-4-image.jpg" alt="thief-image" width="240px" height="240px">
+              </div>
+              <div class="card-date">
+                <img width="13" height="13" src="https://img.icons8.com/material/24/737373/calendar--v1.png" alt="calendar--v1"/>
+                <p>19 AVQ, 2024 / 11:16</p>
+                <img width="13" height="13" src="https://img.icons8.com/material-rounded/24/737373/visible.png" alt="visible"/>
+                <p>677</p>
+              </div>
+              <div class="card-info">
+                <p>AFFA "Turan Tovuz"un stadionunda ot örtüyünün deyişdirlmesi ile bağli tapşırıq verib</p>
+              </div>
+              <div class="card-action">
+                <span class="category">İDMAN</span>
+                <div class="likes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/forma-light/24/737373/facebook-like.png" alt="facebook-like"/>
+                  <p>81</p>
+                </div>
+                <div class="dislikes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/windows/32/737373/thumbs-down.png" alt="thumbs-down"/> 
+                  <p>11</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                <img class="news-1-image" src="./assets/images/news-5-image.jpeg" alt="thief-image" width="240px" height="240px">
+              </div>
+              <div class="card-date">
+                <img width="13" height="13" src="https://img.icons8.com/material/24/737373/calendar--v1.png" alt="calendar--v1"/>
+                <p>19 AVQ, 2024 / 11:08</p>
+                <img width="13" height="13" src="https://img.icons8.com/material-rounded/24/737373/visible.png" alt="visible"/>
+                <p>1808</p>
+              </div>
+              <div class="card-info">
+                <p>Bakıda əri tərəfindən bıçaqlanan qadın 2 gün sonra öldü</p>
+              </div>
+              <div class="card-action">
+                <span class="category">KRİMİNAL</span>
+                <div class="likes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/forma-light/24/737373/facebook-like.png" alt="facebook-like"/>
+                  <p>19</p>
+                </div>
+                <div class="dislikes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/windows/32/737373/thumbs-down.png" alt="thumbs-down"/> 
+                  <p>138</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card card-6">
+              <div class="card-header">
+                <button class="leftt-pink-button"><img width="20" height="20" src="https://img.icons8.com/carbon-copy/100/FFFFFF/affinity-photo-1.png" alt="affinity-photo-1"/>FOTO</button>
+                <img class="news-1-image" src="./assets/images/news-6-image.jpg" alt="news-6-image" width="240px" height="240px">
+              </div>
+              <div class="card-date">
+                <img width="13" height="13" src="https://img.icons8.com/material/24/737373/calendar--v1.png" alt="calendar--v1"/>
+                <p>19 AVQ, 2024 / 11:00</p>
+                <img width="13" height="13" src="https://img.icons8.com/material-rounded/24/737373/visible.png" alt="visible"/>
+                <p>1000</p>
+              </div>
+              <div class="card-info">
+                <p>İranda zəlzələ olub</p>
+              </div>
+              <div class="card-action">
+                <span class="category">CƏMİYYƏT</span>
+                <div class="likes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/forma-light/24/737373/facebook-like.png" alt="facebook-like"/>
+                  <p>37</p>
+                </div>
+                <div class="dislikes">
+                  <img width="20px" height="20px" src="https://img.icons8.com/windows/32/737373/thumbs-down.png" alt="thumbs-down"/> 
+                  <p>82</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display= 'flex';
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display= 'none';
+    }
+  </script>
+</body>
+</html>
